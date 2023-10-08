@@ -11,7 +11,7 @@ docker build -t go-sctp-server .
 ## Run
 
 ```bash
-docker run -p 38412:38412 -p go-sctp-server
+docker run -p 38412:38412 -it --network=host go-sctp-server
 ```
 
 This can be tested using `ncat` or `socat`:
